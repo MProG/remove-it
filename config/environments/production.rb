@@ -100,10 +100,10 @@ Flugerstattung::Application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  config.assets.css_compressor = :sass
+  # config.assets.css_compressor = :sass
   config.assets.compile = false
-  config.assets.digest = true
-  config.assets.version = '1.0'
+  # config.assets.digest = true
+  # config.assets.version = '1.0'
   config.force_ssl = true #this should work
 
   config.log_level = :info
