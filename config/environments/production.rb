@@ -90,7 +90,9 @@
 #   config.active_record.dump_schema_after_migration = false
 # end
 
-Flugerstattung::Application.configure do
+Rails.application.configure do
+  # Settings specified here will take precedence over those in config/application.rb.
+
   config.active_storage.service = :amazon
   config.cache_classes = true
   config.eager_load = true
@@ -100,10 +102,10 @@ Flugerstattung::Application.configure do
 
   # Compress JavaScripts and CSS.
   config.assets.js_compressor = :uglifier
-  # config.assets.css_compressor = :sass
+  config.assets.css_compressor = :sass
   config.assets.compile = false
-  # config.assets.digest = true
-  # config.assets.version = '1.0'
+  config.assets.digest = true
+  config.assets.version = '1.0'
   config.force_ssl = true #this should work
 
   config.log_level = :info
